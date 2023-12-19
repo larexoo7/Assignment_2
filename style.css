@@ -1,0 +1,297 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  defult styling */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsla(174, 62%, 47%, 0.1);
+  scroll-behavior: smooth;
+}
+
+/* page style */
+
+section.wrapper {
+  width: 100%;
+  height: 840px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.ios-status {
+  display: none;
+}
+
+section.hero {
+  width: 28.75rem;
+  height: 17.2rem;
+  margin-block-start: 12.8rem;
+  margin-inline-start: 8.7rem;
+  margin-block-end: 22.5rem;
+}
+
+.hero img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  margin-inline-start: -0.4rem;
+  margin-block-start: -0.27rem;
+  margin-block-end: 1.5rem;
+}
+
+h1 {
+  width: 20rem;
+  height: 3.1rem;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-block-end: 1rem;
+}
+
+p.on-large {
+  height: 4.7rem;
+  width: 28.75rem;
+  font-family: poppings;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: hsla(0, 0%, 45%, 1);
+}
+
+p.on-small {
+  display: none;
+}
+
+.container {
+  max-width: 580px;
+  margin-block: 5rem;
+  margin-inline: 7.5rem 8.8rem;
+  background: hsla(0, 0%, 100%, 1);
+  border-radius: 6px;
+  box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+  margin-block-end: 1.9rem;
+  border: 1px;
+}
+
+.input-box label {
+  width: 10rem;
+  height: 0.8rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 0.8;
+  letter-spacing: 0.1px;
+  color: hsla(208, 96%, 10%, 1);
+  margin-block-end: 0.5rem;
+}
+
+.input-box input,
+select {
+  height: 3rem;
+  width: 15rem;
+  padding-block: 0.8rem;
+  padding-inline: 1rem 3.2rem;
+  color: hsla(0, 0%, 45%, 1);
+  font-size: 0.9rem;
+  border: 1px solid hsla(0, 0%, 78%, 1);
+  border-radius: 3px;
+}
+
+.input-box input:focus,
+input:active,
+.input-box select:focus,
+select:active {
+  border: 2px solid hsla(174, 62%, 47%, 1);
+  outline: none;
+}
+
+.level label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 31.3rem;
+  margin-block-end: 0.5rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 0.8;
+  letter-spacing: 0.1px;
+  color: hsla(208, 96%, 10%, 1);
+}
+
+.level select,
+.level input {
+  margin-block-end: 1.9rem;
+  width: 31.3rem;
+  height: 3rem;
+  color: hsla(0, 0%, 45%, 1);
+  padding-inline: 1rem 3.2rem;
+  font-size: 0.9rem;
+  border: 1px solid hsla(0, 0%, 78%, 1);
+  border-radius: 3px;
+}
+
+.level select:focus,
+select:active,
+.level input:focus,
+input:active {
+  border: 2px solid hsla(174, 62%, 47%, 1);
+  outline: none;
+}
+
+.level i {
+  position: absolute;
+  right: 3.2rem;
+  margin: 0.94rem auto;
+  color: hsla(0, 0%, 45%, 0.8);
+}
+
+input.btn {
+  padding-inline: 13.7rem;
+  padding-block: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: hsla(0, 0%, 100%, 1);
+  background: hsla(174, 62%, 47%, 1);
+  border: 1px solid hsla(0, 0%, 94%, 1);
+  box-shadow: 0px 10px 40px 0px hsla(0, 0%, 0%, 0.1);
+  margin-block-end: 0;
+}
+
+p.policy {
+  font-family: poppings;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-block-start: 1rem;
+  margin-inline: 0.94rem;
+}
+
+p.policy strong {
+  color: hsl(174, 62%, 47%);
+  text-decoration: underline hsl(174, 62%, 47%);
+}
+
+@media screen and (max-width: 375px) {
+  section.wrapper {
+    width: 376px;
+    height: 1294px;
+    display: block;
+    margin: 0;
+  }
+
+  .ios-status {
+    display: block;
+    flex-direction: column;
+    width: 23.5rem;
+    height: 2.75rem;
+    object-fit: cover;
+  }
+
+  section.hero {
+    display: block;
+    width: 23.5rem;
+    height: 14.6rem;
+    margin-block: 1.9rem 2.5rem;
+    margin-inline-start: 1.25rem;
+    margin-inline-end: 1.25rem;
+  }
+
+  .hero img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.8;
+    padding-block-end: 0.75rem;
+  }
+
+  p.on-small {
+    display: block;
+    height: 3rem;
+    width: 20.4rem;
+    font-family: poppings;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: hsla(0, 0%, 45%, 1);
+  }
+
+  p.on-large {
+    display: none;
+  }
+
+  .container {
+    width: 20.4rem;
+    height: 54.3rem;
+    margin-inline: 1.25rem;
+    margin-block-start: 2.5rem;
+    margin-block-end: 1.5rem;
+  }
+
+  .content {
+    display: block;
+    padding: 1rem;
+  }
+
+  .input-box {
+    width: 18.4rem;
+  }
+
+  .input-box label,
+  .input-box input,
+  .input-box select {
+    width: 18.4rem;
+  }
+
+  .level label,
+  .level input,
+  .level select {
+    width: 18.4rem;
+  }
+
+  .level select {
+    margin-block-end: 1.2rem;
+  }
+
+  input.btn {
+    padding-inline: 7.25rem;
+    margin-block-end: 1.25rem;
+  }
+
+  p.policy {
+    font-family: poppings;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}

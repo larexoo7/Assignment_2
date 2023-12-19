@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Sign_up_for_individuals" />
+    <meta name="oke olaoluwa" content="Assignment_no2" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2c859f8be2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="wrapper">
+      <img
+        src="images/status-bar-black.png"
+        alt="ios status bar"
+        class="ios-status"
+      />
+      <section class="hero">
+        <img src="images/Logo.png" alt="Website_logo" />
+        <h1>For Individuals</h1>
+        <p class="on-large">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+        <p class="on-small">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+      </section>
+
+      <section class="container">
+        <form action="" autocomplete="on">
+          <div class="content">
+            <div class="input-box">
+              <label for="Fname">First Name</label>
+              <input
+                type="text"
+                name="Fname"
+                id="Fname"
+                value="Tolu"
+                style="border: 2px solid hsla(174, 62%, 47%, 1)"
+                readonly
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="Lastname">Last Name</label>
+              <input
+                type="text"
+                name="Lastname"
+                id="Lastname"
+                placeholder=""
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="gender" aria-label="select a gender">Gender</label>
+              <select name="gender" id="gender" required>
+                <option value="placeholder" disabled selected>
+                  Select here
+                </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <label for="dob">Date of Birth</label>
+              <input
+                type="text"
+                name="dob"
+                id="dob"
+                placeholder="Select here"
+                onfocus="(this.type='date')"
+                required
+              />
+              <!-- <i class="fa-regular fa-calendar-days"></i> -->
+            </div>
+
+            <div class="input-box">
+              <label for="weight">Weight (KG)</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Enter Weight"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="height">Height (CM)</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Enter Height here"
+                required
+              />
+            </div>
+
+            <div class="level">
+              <label for="activity">Activity Level</label>
+              <select name="activity" id="activity" required>
+                <option value="" disabled selected>Select here</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermeidate</option>
+                <option value="Professional">Professional</option>
+              </select>
+            </div>
+
+            <div class="level">
+              <label for="password">Password</label>
+              <input type="password" id="password" required autocomplete="on" />
+              <i class="fa-regular fa-eye"></i>
+            </div>
+
+            <input type="submit" value="Register" class="btn" />
+            <p class="policy">
+              By clicking Register, you agree to our
+              <a href=""><strong>Terms of Use</strong></a> and our
+              <a href=""><strong>Privacy Policy</strong></a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>
